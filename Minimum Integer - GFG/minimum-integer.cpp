@@ -31,7 +31,7 @@ public:
 class Solution {
   public:
     int minimumInteger(int N, vector<int> &A) {
-         long long int sum=0;
+          long long int sum=0;
          int ans = INT_MAX;
          sum = accumulate(A.begin(),A.end(),sum);
           for(int i=0;i<N;i++)
