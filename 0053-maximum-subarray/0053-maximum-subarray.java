@@ -6,7 +6,9 @@ class Solution {
         {
             cs=cs+nums[i];
             ms=Math.max(cs,ms);
-            cs=Math.max(0,cs);      
+            if(cs<0){
+                cs=0;
+            }     
         }
         return ms;
     }
